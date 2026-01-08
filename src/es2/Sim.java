@@ -14,6 +14,18 @@ public class Sim {
         this.chiamate = new Chiamata[5];
     }
 
+    @Override
+    public String toString() {
+        return "Sim{" +
+                "numeroTelefono='" + numeroTelefono + '\'' +
+                ", credito=" + credito +
+                ", chiamate=" + Arrays.toString(chiamate) +
+                '}';
+    }
+
+    public void setChiamate(Chiamata[] chiamate) {
+        this.chiamate = chiamate;
+    }
 
     public void stampaDatiSIM() {
         System.out.println("Numero telefono: " + numeroTelefono);
